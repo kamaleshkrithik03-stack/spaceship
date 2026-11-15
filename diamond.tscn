@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dn54ac0jnxdhi"]
+
+[ext_resource type="Script" uid="uid://cijnirwjn2kab" path="res://diamond.gd" id="1_p8xw3"]
+[ext_resource type="Texture2D" uid="uid://cl2l212w57a25" path="res://assets/images/—Pngtree—game bead baby diamond jewelry_6193558.png" id="2_ljrss"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e0o0b"]
+
+[node name="Node2D" type="Area2D" unique_id=272625074]
+scale = Vector2(0.0478072, -0.03314336)
+script = ExtResource("1_p8xw3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=83449094]
+scale = Vector2(2.3039293, 1.2367802)
+texture = ExtResource("2_ljrss")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1922633640 groups=["diamond"]]
+scale = Vector2(-75.06819, 72.28187)
+shape = SubResource("CircleShape2D_e0o0b")
